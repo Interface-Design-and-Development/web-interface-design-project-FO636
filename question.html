@@ -4,16 +4,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <title>Chips Ahoy</title>
-        <link rel="stylesheet" href="cookiestyle.css"> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="question.html">Question</a></li>
-            <li><a href="favorite.html">My Favorite</a>
-        </ul>
+        <link rel="stylesheet" href="styles.css"> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="question.html">Question</a></li>
+                <li><a href="favorite.html">My Favorite</a>
+            </ul>
+        </nav>
     </head>
 
     <body>
         <h1>Chips Ahoy Chewy is the Best!</h1>
-        <p>Chips Ahoy Chewy </p>
+        <p>
+            Chips Ahoy Chewy is one of my favorite, but I also have others.<br>
+            So let me ask you a question.<br>
+            What is your favorite cookie?<br>
+        </p>
+        <img src="bigcookies.jpg" alt="Big Chips Ahoy" width="300" height="200">
+        <form action="submit.html" method="post">
+            <input type="radio" name="cookie" value="Chips Ahoy Chewy" id="chips-ahoy-chewy">
+            <label for="chips-ahoy-chewy">Chips Ahoy Chewy</label><br>
+            <input type="radio" name="cookie" value="Chips Ahoy Crunchy" id="chips-ahoy-crunchy">
+            <label for="chips-ahoy-crunchy">Chips Ahoy Crunchy</label><br>
+            <input type="radio" name="cookie" value="Oreo" id="oreo">
+            <label for="oreo">Oreo</label><br>
+            <input type="radio" name="cookie" value="Newton" id="newton">
+            <label for="newton">Newton</label><br>
+            <input type="radio" name="cookie" value="Other" id="other">
+            <label for="other">Other</label><br>
+            <input type="text" name="other-cookie" placeholder="If other, please specify"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>Feel free to share your favorite cookie with me!</p>
     </body>
 </html>
+<!-- End of file: question.html -->
